@@ -1,0 +1,16 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home , name='blog-home')]
+
+
+
+'''from django.urls import path
+from . import views
+from django.views.generic import TemplateView
+
+
+urlpatterns = [
+    path('', TemplateView.as_view(template_name='core/index.html'))
+]'''
